@@ -1,0 +1,13 @@
+<div class="img">
+  <img src="/assets/images/{{img}}" *ngIf="img !==''" />
+</div>
+<div class="details">
+  <div>
+    <p>Bölgə: {{weatherData.timezone}}</p><br>
+    <p>Tarix: {{weatherData.current_weather.time.split("T")}}</p>
+  </div>
+  <div>
+    <p>Küləyin sürəti: {{weatherData.current_weather.windspeed}} km/saat</p><br>
+    <p>Temperatur: {{weatherData.current_weather.temperature}} °C</p>
+  </div>
+</div>
